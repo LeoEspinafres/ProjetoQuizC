@@ -7,7 +7,7 @@
 #include <time.h>
 #include <ctype.h> 
 
-#define tam_perguntas 200
+#define tam_perguntas 255
 #define tam_respostas 40
 
 typedef struct jogador{
@@ -17,16 +17,18 @@ typedef struct jogador{
 
 typedef struct perguntas
 {
-    char pergunta[100][tam_perguntas];
+    char pergunta[100][tam_perguntas]; //falta const
     char resposta[100][tam_perguntas];
-    int total;
+    char tipo[100];
+	char multiplaCorreta[100][tam_respostas];	
 }Perguntas;
 
 void perguntasFaceis();
-//void randomPerguntas (char perguntas[], int numPerguntas);
+void randomPerguntas (char perguntas[100][tam_perguntas], char resposta[100][tam_respostas], int numPerguntas, char escolhaMultipla[100][tam_respostas]);
 void instrucoes();
 void adicionarQuestoes();
 void perguntasMedias();
+void separarRespostas(char linha[4], char opcoes[4][100]);
 
 int main() {
     printf("***********************************************\n");
@@ -59,6 +61,7 @@ int main() {
 	
 	int contagem = 0;
 	scanf("%d", &op);
+	srand(time(NULL));
 	char sim;
 		switch (op) 
 		{
@@ -145,23 +148,34 @@ void perguntasFaceis() {
         	fprintf(stderr, "Linha inválida: %s\n", linha);
     	}
     }
-    p.total = i;
     fclose(perguntas);
 }
-
-/*
-void randomPerguntas (char perguntas[], int total){
-	srand(time(NULL)); //função que não demos, dá reset ao rand() para que seja sempre random o baralhar
-	for (int i = total - 1; i > 0; i--) {
+//randomPerguntas (p.pergunta, p.resposta, numPerguntas, p.multiplaCorreta); //Amanha Ver desta funçao 
+void randomPerguntas (char perguntas[100][tam_perguntas], char resposta[100][tam_respostas], int numPerguntas, char escolhaMultipla[100][tam_respostas]){
+ //função que não demos, dá reset ao rand() para que seja sempre random o baralhar
+	for (int i = numPerguntas - 1; i > 0; i--) {
 		int j = rand() % (i + 1); // vai definir o numero random
 
-		char temp[tam_perguntas];
-		strcpy(temp, perguntas[i]); //aqui, ou usava pointers mas não demos, então com o string copy guardo aquela pergunta inicial numa variavel temporaria
+		char tempPergunta[tam_perguntas];
+		strcpy(tempPergunta, perguntas[i]); //aqui, ou usava pointers mas não demos, então com o string copy guardo aquela pergunta inicial numa variavel temporaria
 		strcpy(perguntas[i], perguntas[j]); //depois a pergunta selecionada pelo rand() é colocada na primeira posiçáo
-		strcpy(perguntas[j], temp); // e a primeira pergunta é colocada no lugar da selecionada pelo rand
+		strcpy(perguntas[j], tempPergunta); // e a primeira pergunta é colocada no lugar da selecionada pelo rand
+		
+		char tempResposta[tam_respostas];
+		strcpy(tempResposta, resposta[i]);
+		strcpy(resposta[i], resposta[j]);
+		strcpy(resposta[j], tempResposta);
+	}
+	for (int i = 0; i < 12; i++) {
+		printf("%s\n", perguntas[i]);
+	}
+	for (int i = 0; i < 12; i++) {
+		printf("%s\n", resposta[i]);
+	}
+	for (int i = 0; i < 12; i++) {
+		printf("%s\n", escolhaMultipla[i]);
 	}
 }
-*/
 
 void instrucoes() {
 	printf("***********************************************************\n");
@@ -265,7 +279,7 @@ void perguntasMedias(){
 	if (res != 's')
 		return;
 	printf("As perguntas vao aparecer de forma aleatoria ate ao numero que selecionou");
-	int numPerguntas;
+	int numPerguntas = 0;
 	char c;
    	do {
    	 	printf("Quantas perguntas quer responder?\nResposta: ");
@@ -276,34 +290,105 @@ void perguntasMedias(){
 	} while(1);
 	int i = 0;
 	char linha[tam_perguntas + tam_respostas + 5];
-	char tipo;
-char pergunta[tam_perguntas];
-char resposta1[tam_respostas];
-char resposta2[tam_respostas];
-char resposta3[tam_respostas];
-char resposta4[tam_respostas];
+	char pergunta[tam_perguntas];
+	char resposta1[tam_respostas];
+	char resposta2[tam_respostas];
+	char resposta3[tam_respostas];
+	char resposta4[tam_respostas];
 
-while (fgets(linha, sizeof(linha), perguntasMedias) != NULL && i < numPerguntas) {
-    linha[strcspn(linha, "\n")] = 0;
+	while (fgets(linha, sizeof(linha), perguntasMedias) != NULL && i < numPerguntas) {
+		linha[strcspn(linha, "\n")] = 0; //nao
 
-    tipo = linha[0];
+		p.tipo[i] = linha[0];
 
-    if (tipo == '0' || tipo == '1') {
-        if (sscanf(linha + 1, "%255[^,],%99[^\n]", pergunta, resposta1) == 2) {
-            strncpy(p.pergunta[i], pergunta, tam_perguntas);
-            strncpy(p.resposta[i], resposta1, tam_respostas);
-            i++;
-        }
-    } else if (tipo == '2') {
-        if (sscanf(linha + 1, "%255[^,],%99[^,],%99[^,],%99[^,],%99[^\n]", pergunta, resposta1, resposta2, resposta3, resposta4) == 5) {
-            snprintf(p.pergunta[i], tam_perguntas, "%s", pergunta);
-            snprintf(p.resposta[i], tam_respostas, "%s,%s,%s,%s", resposta1, resposta2, resposta3, resposta4);
-            i++;
-        }
-    }
-}
-	for (int j = 0; j < numPerguntas; j++) {
-		printf("Pergunta %d: %s\n", j + 1, p.pergunta[j]);
-		printf("Resposta %d: %s\n", j + 1, p.resposta[j]);
+		if (p.tipo[i] == '0' || p.tipo[i] == '1') {
+			if (sscanf(linha + 1, "%255[^,],%[^\n]", pergunta, resposta1) == 2) {
+				strncpy(p.pergunta[i], pergunta, tam_perguntas);
+				strncpy(p.resposta[i], resposta1, tam_respostas);
+				i++;
+			}
+		} 
+		else if (p.tipo[i] == '2') {
+			if (sscanf(linha + 1, "%255[^,],%99[^,],%99[^,],%99[^,],%99[^\n]", pergunta, resposta1, resposta2, resposta3, resposta4) == 5) {
+				snprintf(p.pergunta[i], tam_perguntas, "%s", pergunta); //alterar
+				snprintf(p.resposta[i], tam_respostas, "%s,%s,%s,%s", resposta1, resposta2, resposta3, resposta4); //alterar
+				strncpy(p.multiplaCorreta[i], resposta1, tam_respostas);
+				i++;
+			}
 		}
+	}
+	randomPerguntas (p.pergunta, p.resposta, numPerguntas, p.multiplaCorreta);
+
+	for( int i = 0; i < numPerguntas; i++) {
+		printf("Pergunta: %s\n", p.pergunta[i]);
+		printf("Resposta: %s\n", p.resposta[i]);
+		printf("Tipo: %c\n", p.tipo[i]);
+	}
+	int pontos = 0;
+	int k = 0;
+	char respostaVF;
+	char respostaNumerica[tam_respostas];
+	int respostaEscolhaMultipla = 0;
+	for (int j = 0; j < numPerguntas; j++) {
+		if(p.tipo[k] == '0') {
+			printf("Pergunta %d: %s\n", j + 1, p.pergunta[j]);
+			printf("Resposta: ");
+			scanf(" %c", &respostaVF);
+			respostaVF = toupper(respostaVF);
+			if (respostaVF == 'V' || respostaVF == 'F'){
+				if(respostaVF == p.resposta[j][0]){
+					printf("Acertou!\n");
+					pontos += 3;
+				}
+				else 
+					printf("Falhou\n");
+			}
+		}
+		else if(p.tipo[k] == '1') {
+			printf("Pergunta %d: %s\n", j + 1, p.pergunta[j]);
+			printf("Resposta: ");
+			scanf(" %s", &respostaNumerica);
+			if (strcmp(respostaNumerica, p.resposta[j]) == 0){
+				printf("Acertouuu");
+				pontos += 3;
+			}
+			else
+				printf("Falhou");
+		}
+		else if (p.tipo[k] == '2') {
+			printf("Pergunta %d: %s\n", j + 1, p.pergunta[j]);
+			printf("Selecione a opcao correta!\n");
+			char opcoes[4][100];
+			separarRespostas(p.resposta[j], opcoes);
+			printf("Resposta correta: %s\n", p.multiplaCorreta[j]);
+			for (int k = 0; k < 4; k++) 
+				printf("%d. %s\n", k + 1, opcoes[k]);
+			printf("Resposta: ");
+			scanf(" %d", &respostaEscolhaMultipla);
+			int respostaCerta = 1;
+			if (respostaEscolhaMultipla == respostaCerta){
+				printf("Acertou!!\n");
+				pontos += 3;
+			}
+			else
+				printf("Falhouuu\n");
+		}
+		k++;
+	}
+}
+void separarRespostas(char linha[255], char opcoes[4][100]){ //altearar nomes var
+	int i = 0; //index
+	int res= 0; //resposta
+	int caracter = 0;
+	while(res < 4 && linha[i] != '\0') {
+		if (linha[i] == ',') {
+			opcoes[res][caracter] = '\0'; // para meter nulo para terminar a string
+			res++; //avançar na resposta
+			caracter = 0; //voltar ao primeiro caracter
+		}
+		else
+			opcoes[res][caracter++] = linha[i]; //copiar o que esta na linha para a opcao
+		i++;
+	}
+	opcoes[res][caracter] = '\0';
 }
