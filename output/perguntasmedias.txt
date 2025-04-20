@@ -1,12 +1,7 @@
-0Quantos anos tem a ti maria?,V
-1Como e que te chamas?,1999
-2Qual destas está certa?,cao,gato,coelho,cimento
-0Sabes nadar?,F
-1Em que ano nasceu Cristiano Ronaldo?,1985
-2Qual destas frutas tem caroço?,maçã,banana,pêssego,melancia
-0Estás a usar meias agora?,V
-1Quantos dias tem um ano normal?,365
-2Qual destes animais voa?,cavalo,gavião,tartaruga,cão
-0Já alguma vez fizeste campismo?,F
-1Quantos planetas há no sistema solar?,8
-2Qual destes é um instrumento musical?,martelo,pandeireta,chave inglesa,tesoura
+1Em que ano foi implementado o Euro em Portugal?,2002
+0O fado é considerado património imaterial da humanidade?,V
+2Qual destas comidas é típica portuguesa?,Feijoada à transmontana,Burrito,Hambúrguer,Sushi
+1Quantos países fazem fronteira terrestre com Portugal?,1
+2Qual destes rios passa em Lisboa?,Tejo,Guadiana,Minho,Douro
+0Portugal tem ilhas nos Açores?,V
+2Qual destas regiões pertence a Portugal?,Alentejo,Galiza,Catalunha,Andaluzia

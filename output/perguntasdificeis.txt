@@ -1,0 +1,7 @@
+1Quantas freguesias existem em Portugal (aprox)?,3092
+0A Serra da Estrela é o ponto mais alto de Portugal?,V
+2Qual destes escritores é português?,Luis de Camões,Borges,Garcia Lorca,Pablo Neruda
+1Em que ano Portugal entrou para a CEE?,1986
+2Qual destas é uma universidade portuguesa?,Coimbra,Oxford,Harvard,Sorbonne
+0Portugal tem mais de 10 milhões de habitantes?,V
+2Qual destes é um vinho português famoso?,Porto,Chianti,Rioja,Champagne

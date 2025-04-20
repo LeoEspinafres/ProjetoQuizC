@@ -1,0 +1,7 @@
+0Portugal é um país da União Europeia?,V
+0Lisboa é a capital de Portugal?,V
+1Quantos distritos tem Portugal continental?,18
+2Qual destas cidades é capital de distrito?,Porto,Braga,Guimaraes,Sintra
+0Lisboa fica a norte de Portugal?,F
+1Em que ano aconteceu o 25 de Abril?,1974
+2Qual destas praias é portuguesa?,Carcavelos,Copacabana,Malibu,Ibiza
