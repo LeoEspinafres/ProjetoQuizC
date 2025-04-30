@@ -6,7 +6,8 @@
 /*   By: leonor joaquim                                */
 /*                                                     */
 /*   Created: 2025/04/08 22:02:57 by leonor            */
-/*   Updated: 2025/04/25 18:00:57 by leonor            */
+/*   Updated: 2025/04/30 17:25:01 by leonor            */
+/*   Trello:  https://trello.com/b/w9xdOht9            */
 /*                                                     */
 /* *************************************************** */
 
@@ -33,13 +34,13 @@
 
 typedef struct jogador
 {
-	char nome[20];
+	char nome[30];
 	int pontuacao;
 } Jogador;
 
 typedef struct ranking
 { 
-	Jogador jogadores[10];
+	Jogador jogadores[100];
 	int numJogadores;
 } Rank;
 
@@ -60,15 +61,15 @@ void fazerPerguntas(int dificuldade, Jogador jogador);
 void separarRespostas(char linha[255], char opcoes[4][100]);
 void baralharRespostas(char opcoes[4][100]);
 void historico(Jogador jogador);
-void ordenarRank(char arrayTemp[100][255], int numLinhas);
+void ordenarRank();
 int verificarJogador(Jogador jogador);
 void adicionarFicheiro();
 int contarLinhas(FILE *perguntas);
 void ficheiroRecebidoParaBin(int dificuldade);
-#//Funções utilitárias
+//Funções utilitárias
 void limparEcra();
-void pausa();
-void som();
-
+void pausa(int segundos);
+void som(int freq, int duracao);
+void cores(int cor);
 
 #endif //BIBLIOTECA_H

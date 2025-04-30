@@ -1,23 +1,22 @@
-1Quantas freguesias existem em Portugal (aprox)?,3092,"Portugal conta com aproximadamente 3092 freguesias, distribuidas pelo continente e ilhas."
-0A Serra da Estrela e o ponto mais alto de Portugal Continental?,V,"A Serra da Estrela possui o ponto mais alto de Portugal Continental, na Torre, a cerca de 1993 metros de altitude."
-2Qual destes escritores e portugues?,Luis de Camoes,Borges,Garcia Lorca,Pablo Neruda,"Luis de Camoes e um dos maiores escritores portugueses, autor de 'Os Lusiadas'."
-1Em que ano Portugal entrou para a CEE?,1986,"Portugal aderiu a Comunidade Economica Europeia (CEE) em 1986"
-2Qual destas e uma universidade portuguesa?,Coimbra,Oxford,Harvard,Sorbonne,"A Universidade de Coimbra, fundada em 1290, e uma das mais antigas da Europa e localizada em Portugal."
-0Portugal tem mais de 10 milhoes de habitantes?,V,"A populacao portuguesa e de cerca de 10,3 milhoes de habitantes."
-2Qual destes e um vinho portugues famoso?,Porto,Chianti,Rioja,Champagne,"O Vinho do Porto e um dos vinhos mais emblematicos de Portugal, conhecido mundialmente."
-1Quantos ossos tem o corpo humano adulto?,206,"O corpo humano adulto e composto por 206 ossos."
-2Qual destes escritores ganhou o Premio Nobel da Literatura?,Jose Saramago,Paulo Coelho,Chico Buarque,Carlos Drummond de Andrade,"Jose Saramago, escritor portugues, recebeu o Premio Nobel da Literatura em 1998."
-0A velocidade da luz e superior a do som?,V,"A velocidade da luz e extremamente superior a do som, viajando a cerca de 300.000 km/s no vacuo."
-1Em que ano foi fundada a Organizacao das Nacoes Unidas?,1945,"A ONU foi fundada em 1945, apos a Segunda Guerra Mundial, para promover a paz e a cooperaçao internacional."
-2Qual destes paises nao faz parte do G7?,China,Canada,França,Alemanha,"A China nao pertence ao G7; o G7 inclui Canada, França, Alemanha, entre outros."
-2Quem pintou a Capela Sistina?,Michelangelo,Leonardo da Vinci,Rafael,Botticelli,"Michelangelo foi o artista que pintou o famoso teto da Capela Sistina no Vaticano."
-2Em que seculo ocorreu a Revolucao Francesa?,XVIII,XVII,XIX,XX,"A Revoluçao Francesa teve inicio no final do seculo XVIII, em 1789."
-2Qual e o nome do estadio do incrivel clube Boavista?,Estadio do Bessa,Estadio Capital do Movel,Estadio D Afonso Henriques,Estadio Municipal Hasselbaink,"O Boavista Futebol Clube joga no Estadio do Bessa, localizado na cidade do Porto."
-1Em que ano foi nomeado o Papa Francisco?,2013,"O Papa Francisco foi eleito em 2013, sucedendo ao Papa Bento XVI."
-2Qual das seguintes expressoes de pre-processamento em C e utilizada para incluir um arquivo de cabecalho?,#include,#define,#ifdef,#pragma,"A diretiva '#include' e usada em C para incluir ficheiros de cabeçalho no codigo-fonte."
-2Qual das seguintes funcoes da biblioteca padrao de C e utilizada para comparar duas strings?,strcmp,strcpy,strcat,strlen,"A funcao 'strcmp' compara duas strings e retorna o resultado numerico da comparacao."
-0A funcao free() em C e utilizada para alocar memoria dinamicamente?,F,"A funcao 'free()' e usada para libertar memoria previamente alocada dinamicamente em C, nao para alocar."
-1Qual e o valor ASCII do caractere '*'?,42,"O caractere '*' tem o valor ASCII de 42."Don't Panic" Tu consegues tudo Hitchhiker"
-0O Eusebio foi o único jogador portugues a ganhar a Bola de Ouro?,F,"Apesar de Eusebio ter ganho em 1965, Luis Figo tambem venceu a Bola de Ouro em 2000."
-2Qual destas equipas venceu a Liga dos Campeoes na epoca 2003/2004?,Futebol Clube do Porto,AS Monaco,Chelsea,Real Madrid,"O FC Porto venceu a final da Liga dos Campeoes em 2004, derrotando o AS Monaco por 3-0."
-1Quantas vezes o Sport Lisboa e Benfica venceu a Taca dos Campeoes Europeus (atual Liga dos Campeoes)?,2,"O Benfica venceu a Taca dos Campeoes Europeus em 1961 e 1962, sob o comando de Bela Guttmann."
+1Quantas freguesias existem em Portugal (aprox)?|3092|Portugal conta com aproximadamente 3092 freguesias, distribuidas pelo continente e ilhas.
+0A Serra da Estrela e o ponto mais alto de Portugal Continental?|V|A Serra da Estrela possui o ponto mais alto de Portugal Continental, na Torre, a cerca de 1993 metros de altitude.
+2Qual destes escritores e portugues?|Luis de Camoes|Borges|Garcia Lorca|Pablo Neruda|Luis de Camoes e um dos maiores escritores portugueses, autor de 'Os Lusiadas'.
+1Em que ano Portugal entrou para a CEE?|1986|Portugal aderiu a Comunidade Economica Europeia (CEE) em 1986
+2Qual destas e uma universidade portuguesa?|Coimbra|Oxford|Harvard|Sorbonne|A Universidade de Coimbra, fundada em 1290, e uma das mais antigas da Europa e localizada em Portugal.
+0Portugal tem mais de 10 milhoes de habitantes?|V|A populacao portuguesa e de cerca de 10,3 milhoes de habitantes.
+2Qual destes e um vinho portugues famoso?|Porto|Chianti|Rioja|Champagne|O Vinho do Porto e um dos vinhos mais emblematicos de Portugal, conhecido mundialmente.
+1Quantos ossos tem o corpo humano adulto?|206|O corpo humano adulto e composto por 206 ossos.
+2Qual destes escritores ganhou o Premio Nobel da Literatura?|Jose Saramago|Paulo Coelho|Chico Buarque|Carlos Drummond de Andrade|Jose Saramago, escritor portugues, recebeu o Premio Nobel da Literatura em 1998.
+0A velocidade da luz e superior a do som?|V|A velocidade da luz e extremamente superior a do som, viajando a cerca de 300.000 km/s no vacuo.
+1Em que ano foi fundada a Organizacao das Nacoes Unidas?|1945|A ONU foi fundada em 1945, apos a Segunda Guerra Mundial, para promover a paz e a cooperaçao internacional.
+2Qual destes paises nao faz parte do G7?|China|Canada|França|Alemanha|A China nao pertence ao G7; o G7 inclui Canada, França, Alemanha, entre outros.
+2Quem pintou a Capela Sistina?|Michelangelo|Leonardo da Vinci|Rafael|Botticelli|Michelangelo foi o artista que pintou o famoso teto da Capela Sistina no Vaticano.
+2Em que seculo ocorreu a Revolucao Francesa?|XVIII|XVII|XIX|XX|A Revoluçao Francesa teve inicio no final do seculo XVIII, em 1789.
+2Qual e o nome do estadio do incrivel clube Boavista?|Estadio do Bessa|Estadio Capital do Movel|Estadio D Afonso Henriques|Estadio Municipal Hasselbaink|O Boavista Futebol Clube joga no Estadio do Bessa, localizado na cidade do Porto.
+1Em que ano foi nomeado o Papa Francisco?|2013|O Papa Francisco foi eleito em 2013, sucedendo ao Papa Bento XVI.
+2Qual das seguintes expressoes de pre-processamento em C e utilizada para incluir um arquivo de cabecalho?|#include|#define|#ifdef|#pragma|A diretiva '#include' e usada em C para incluir ficheiros de cabeçalho no codigo-fonte.
+2Qual das seguintes funcoes da biblioteca padrao de C e utilizada para comparar duas strings?|strcmp|strcpy|strcat|strlen|A funcao 'strcmp' compara duas strings e retorna o resultado numerico da comparacao.
+0A funcao free() em C e utilizada para alocar memoria dinamicamente?|F|A funcao 'free()' e usada para libertar memoria previamente alocada dinamicamente em C, nao para alocar.
+1Qual e o valor ASCII do caractere '*'?|42|O caractere '*' tem o valor ASCII de 42."Don't Panic" Tu consegues tudo Hitchhiker
+0O Eusebio foi o único jogador portugues a ganhar a Bola de Ouro?|F|Apesar de Eusebio ter ganho em 1965, Luis Figo tambem venceu a Bola de Ouro em 2000.
+2Qual destas equipas venceu a Liga dos Campeoes na epoca 2003/2004?|Futebol Clube do Porto|AS Monaco|Chelsea|Real Madrid|O FC Porto venceu a final da Liga dos Campeoes em 2004, derrotando o AS Monaco por 3-0.
