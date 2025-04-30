@@ -1,7 +1,15 @@
-1Em que ano foi implementado o Euro em Portugal?,2002
-0O fado é considerado património imaterial da humanidade?,V
-2Qual destas comidas é típica portuguesa?,Feijoada à transmontana,Burrito,Hambúrguer,Sushi
-1Quantos países fazem fronteira terrestre com Portugal?,1
-2Qual destes rios passa em Lisboa?,Tejo,Guadiana,Minho,Douro
-0Portugal tem ilhas nos Açores?,V
-2Qual destas regiões pertence a Portugal?,Alentejo,Galiza,Catalunha,Andaluzia
+1Em que ano foi implementado o Euro em Portugal?,2002,"O Euro foi implementado em Portugal em 1 de janeiro de 2002, substituindo o Escudo."
+0O fado e considerado patrimonio imaterial da humanidade?,V,"O fado foi reconhecido como Patrimonio Cultural Imaterial da Humanidade pela UNESCO em 2011."
+2Qual destas comidas e típica portuguesa?,Feijoada a transmontana,Burrito,Hamburguer,Sushi,"A Feijoada a Transmontana é um prato tradicional portugues; os outros sao de origem estrangeira."
+1Quantos paises fazem fronteira terrestre com Portugal?,1,"Portugal partilha a fronteira terrestre apenas com Espanha."
+2Qual destes rios passa em Lisboa?,Tejo,Guadiana,Minho,Douro,"O rio Tejo atravessa Lisboa antes de desaguar no oceano Atlantico."
+0Portugal tem ilhas nos Acores?,V,"Os Acores sao um arquipelago portugues situado no meio do Atlântico."
+2Qual destas regioes pertence a Portugal?,Alentejo,Galiza,Catalunha,Andaluzia,"O Alentejo é uma regiao de Portugal; as outras pertencem a Espanha."
+1Em que ano terminou a Segunda Guerra Mundial?,1945,"A Segunda Guerra Mundial terminou oficialmente em 1945 com a rendiçao da Alemanha e do Japao."
+2Qual destes gases e o mais abundante na atmosfera terrestre?,Azoto,Oxigenio,Dioxido de Carbono,Argonio,"O Azoto (ou Nitrogenio) constitui cerca de 78% da atmosfera terrestre."
+2Qual destas cidades e conhecida como "invicta"?,Porto,Braga,Lisboa,Braganca,"O Porto e apelidado de 'Invicta' devido a sua resistência durante as invasoes francesas."
+0Em C strings sao um tipo de dado primitivo?,F,"Em C, strings sao conjuntos de caracteres terminados por um caractere nulo ('\0'), nao um tipo de dado primitivo."
+1Quantos bytes ocupa um tipo de dado char em C?,1,"Em C, um 'char' ocupa exatamente 1 byte."
+1Quantos bytes ocupa um tipo de dado float em C?,4,"Normalmente, um 'float' em C ocupa 4 bytes em sistemas modernos."
+0Pointers em C armazenam o valor de uma variavel e nao o seu endereço de memoria?,F,"Pointers armazenam o endereco de memoria da variável, nao o seu valor diretamente."
+2Qual das seguintes estruturas de controlo de fluxo em C executa um bloco de codigo pelo menos uma vez?,do-while,while,for,if,"A estrutura 'do-while' garante que o bloco de codigo e executado pelo menos uma vez antes da condicao ser testada."

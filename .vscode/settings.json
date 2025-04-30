@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "time.h": "c",
+        "stdlib.h": "c",
+        "conio.h": "c",
+        "biblioteca.h": "c"
+    },
+    "C_Cpp.dimInactiveRegions": false
+}

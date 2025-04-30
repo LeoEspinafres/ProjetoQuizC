@@ -1,7 +1,23 @@
-0Portugal é um país da União Europeia?,V
-0Lisboa é a capital de Portugal?,V
-1Quantos distritos tem Portugal continental?,18
-2Qual destas cidades é capital de distrito?,Porto,Braga,Guimaraes,Sintra
-0Lisboa fica a norte de Portugal?,F
-1Em que ano aconteceu o 25 de Abril?,1974
-2Qual destas praias é portuguesa?,Carcavelos,Copacabana,Malibu,Ibiza
+0Portugal e um pais da Uniao Europeia?,V,"Portugal aderiu a entao Comunidade Económica Europeia (CEE), que mais tarde se tornou a Uniao Europeia, em 1986."
+0Lisboa e a capital de Portugal?,V,"Lisboa e a capital e a maior cidade de Portugal."
+1Quantos distritos tem Portugal continental?,18," Portugal Continental esta dividido em 18 distritos e 2 Regioes Autonomas"
+2Qual destas cidades é capital de distrito?,Porto,Amarante,Lourosa,Varzim,"As outras sao cidades portuguesas, mas Porto e a unica capital de distrito na lista"
+0Lisboa fica a norte de Portugal?,F,"Lisboa situa-se na regiao centro-sul de Portugal."
+1Em que ano aconteceu o 25 de Abril?,1974,"O 25 de Abril de 1974 marcou a Revolucao dos Cravos e o fim da ditadura do Estado Novo."
+2Qual destas praias e portuguesa?,Carcavelos,Copacabana,Malibu,Ibiza,"A Praia de Carcavelos e uma praia portuguesa. Copacabana fica no Brasil. Malibu nos Estados Unidos e Ibiza e uma ilha espanhola."
+1Quantas mulheres teve Henrique VIII?,6,"O rei ingles Henrique VIII e famoso por ter tido seis esposas.""
+0Portugal teve 4 dinatias?,V,"Consideram-se quatro dinastias na historia de Portugal: a Afonsina, a de Avis, a Filipina e a de Bragança."
+2Em que ano Portugal conquistou Ceuta?,1415,1416,1417,1418,"A conquista de Ceuta em 1415 e um marco importante no início da expansao maritima portuguesa."
+2Qual destas cidades e a capital da Belgica?,Bruxelas,Amesterdao,Copenhaga,Viena,"Bruxelas e a capital da Belgica e tambem um importante centro administrativo da Uniao Europeia."
+1Quantos lados tem um hexagono?,6,"Um hexagono e um polígono com seis lados e seis angulos.""
+0O numero impar seguinte a 7 e o 9?,V,"Os numeros impares seguem uma sequencia onde cada numero e dois a mais que o anterior. Depois do 7 vem o 9."
+0Os morcegos sao aves?,F,"Morcegos são mamíferos, e não aves."
+1Quantos bytes tem um int num sistema 32bits?,4,"Em muitas arquiteturas de 32 bits, um int geralmente ocupa 4 bytes."
+1Quantos campeonatos tem o sporting em futebol?,24,"O Sporting Clube de Portugal DE ACORDO COM O QUE ELES DIZEM conquistou 24 titulos de campeao nacional de futebol."
+2Qual das seguintes linguagens de programacao e frequentemente usada para desenvolvimento web frontend?,JavaScript,Python,Java,C++,"JavaScript e a linguagem principal para desenvolvimento frontend. Python e mais usado para backend e analise de dados, Java para aplicaçoes empresariais e Android, e C++ para sistemas e jogos."
+1Quantos bits tem um byte?,8,"Um byte e composto por 8 bits."
+0A funcao print() em Python e utilizada para receber input do utilizador?,F,"A funcao print() serve para mostrar informacao (output). A funcao para receber dados do utilizador e input()."
+0Em C todas as variaveis devem ser declaradas antes de serem usadas?,V,"Em C e obrigatorio declarar o tipo de cada variavel antes de a utilizar no codigo.""
+0Na primeira liga portuguesa de futebol ha mais equipas do Norte que do Sul?,V,"O Norte sempre foi mais notorio em termos de futebol"
+1Qual era o numero do Mago Pablo Aimar no Benfica?,10,"Pablo Aimar vestiu a camisola numero 10 durante a sua passagem pelo Sport Lisboa e Benfica."
+0Cristiano Ronaldo comecou a carreira profissional no Sporting?,V,"Cristiano Ronaldo foi formado no Sporting Clube de Portugal antes de se transferir para o Manchester United."
